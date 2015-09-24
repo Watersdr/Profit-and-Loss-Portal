@@ -3,7 +3,10 @@
 
 <head>
   <title>Customers</title>
-  <link href="site.css" rel="stylesheet">
+  <link href="styles/site.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="scripts/jquery.tablesorter.min.js"></script>
 </head>
 
 <body>
@@ -15,23 +18,53 @@
 
 <!--Just waiting on DB finalization for real data-->
 
-<table>
+<table id="datatable" class="tablesorter">
+<thead>
 <tr>
-  <th>Stock</th>
+  <th>Option Sym</th>
   <th>Exchange</th>
-  <th>Rate</th>
+  <th>StrikePrice</th>
+  <th>SortMe1</th>
+  <th>SortMe2</th>
+  <th>SortMe3</th>
+  <th>Exp. Date</th>
 </tr>
+</thead>
+<tbody>
 <tr>
   <th>BSSK</th>
-  <th>NYSE</th>
-  <th>420.69</th>
+  <th>BATS</th>
+  <th>150</th>
+  <th>23</th>
+  <th>43</th>
+  <th>54</th>
+  <th>Jan 18, 2015</th>
 -</tr>
+<tr>
+  <th>GOOG</th>
+  <th>CBOE</th>
+  <th>120</th>
+  <th>34</th>
+  <th>54</th>
+  <th>76</th>
+  <th>Jan 10, 2015</th>
+-</tr>
+<tr>
+  <th>NFLX</th>
+  <th>BATS</th>
+  <th>200</th>
+  <th>67</th>
+  <th>87</th>
+  <th>12</th>
+  <th>Jun 18, 2014</th>
+-</tr>
+</tbody>
 </table>
 
 <footer id="foot01"></footer>
 </div>
 
-<script src="script.js"></script>
+  <script src="scripts/script.js"></script>
 
 </body>
 </html>
